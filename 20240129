@@ -1,0 +1,64 @@
+#define _CRT_SECURE_NO_WARNINGS
+
+////***求两个整数之和
+//#include <stdio.h>	/*预处理指令*/
+//
+//int a, b = 0;	
+//int sum = 0;
+//
+//int main()
+//{
+//	scanf("%d %d", &a, &b);	 /*注意不要缺少地址符&*/
+//	sum = a + b;
+//	printf("The sum is %d\n", sum);
+//	return 0;
+//}
+
+
+////***设计函数，求两个整数中较大者
+//#include <stdio.h>
+//
+//int main()
+//{
+//	int MAX(int x, int y);	/*编译自上而下，在主函数后定义的函数要提前声明;而执行总是从主函数开始，注意编译与执行区别*/
+//	int a, b, c = 0;	/*声明变量时候注意习惯，实参用abc, 函数形参用xyz*/
+//	scanf("%d %d", &a, &b);
+//	c = MAX(a, b);	/*实参*/
+//	printf("The max is %d\n", c);
+//	return 0;	/*主函数中一般返回值为0*/
+//}
+//
+//int MAX(int x, int y)	/*函参形参；无参数可以写(void)或空括号*/
+//{
+//	int z;
+//	if (x > y)
+//		z = x;
+//	else
+//		z = y;
+//	return(z);	/*自定义函数中必须明确指定哪个值作为返回值*/
+//}
+
+
+
+////***编写程序，输入a,b,c三个值，输出其中值最大者
+//#include <stdio.h>
+//
+//int main()
+//{
+//	int MAX(int x, int y, int z);
+//	int a, b, c, d;
+//	scanf("%d %d %d", &a, &b, &c);
+//	d = MAX(a, b, c);
+//	printf("%d\n", d);
+//	return 0;
+//}
+//
+//int MAX(int x, int y, int z)
+//{
+//	int num = x;	/*先假设一个最大者*/
+//	if (y > num)	/*第一组条件判断*/
+//		num = y;	/*若满足第一个条件判断，此时num会更新，从而第二个条件判断中的num也随着更新*/
+//	if (z > num)	/*第二组条件判断*/
+//		num = z;
+//	return(num);
+//}
